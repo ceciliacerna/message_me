@@ -1,5 +1,10 @@
 class ChatroomsController < ApplicationController
-  before_action :set_chatroom, only: %i[ show edit update destroy ]
+  before_action :require_user
+
+  # def index
+  #   @message = Message.new
+  #   @messages = Message.custom_display
+  # end
 
   # GET /chatrooms or /chatrooms.json
   def index

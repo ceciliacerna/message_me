@@ -12,7 +12,7 @@ class SessionsController < ApplicationController
 
   # GET /sessions/new
   def new
-    @session = Session.new
+    # @session = Session.new
   end
 
   # GET /sessions/1/edit
